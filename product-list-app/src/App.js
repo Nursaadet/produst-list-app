@@ -1,5 +1,6 @@
 import Header from "./components/header/Header";
 import ProductList from "./components/products/ProductList.jsx";
+import "./App.scss";
 
 import {products, categories} from "./helper/data";
 
