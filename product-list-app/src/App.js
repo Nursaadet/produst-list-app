@@ -1,15 +1,17 @@
-//? Component
+import Header from "./components/header/Header";
+import ProductList from "./components/products/ProductList.jsx";
+
+import {products, categories} from "./helper/data";
+
 function App() {
-  //? JS kodu
-  const deneme = "REACT"
+  // console.log(products, categories);
 
   return (
-    //! JSX (HTML- JS'nin birleşmiş hali)
     <div className="App">
-      <h2 style={{ color: "red" }}>Hoşgeldin Ya Şehri React</h2>
-      <p className="par">{deneme}</p>
-    </div>
-  )
+      <Header categories={categories} text="Products List"/>
+      <ProductList products={products} />
+      </div>
+  );
 }
 
-export default App
+export default App;
